@@ -21,6 +21,8 @@ namespace SQLiteDemo
             rep.SaveCustomer(customer);
 
             Customer retrievedCustomer = rep.GetCustomer(customer.Id);
+            Console.WriteLine(retrievedCustomer.ToString());
+            Console.ReadKey();
         }
     }
 }
